@@ -10,5 +10,7 @@ SET( testingCode_HDRS
 ADD_EXECUTABLE(test ${testingCode_SRCS} )
 TARGET_LINK_LIBRARIES(test m)
 
+INCLUDE_DIRECTORIES(/usr/include)
+
 INSTALL( TARGETS test DESTINATION bin)
 INSTALL( FILES ${testingCode_HDRS} DESTINATION include)
