@@ -31,4 +31,11 @@ void i2ccom::init()
 	}
 	printf("I2C bus well opened\n");
 	
+	unsigned char values[3];
+	int reg = 0x11;
+	values[0] = 0x33;
+	values[1] = 0x44;
+	i2c_smbus_write_i2c_block_data(file, addr, 2, values);
+
 }
+
