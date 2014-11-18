@@ -8,7 +8,7 @@ SET( testingCode_HDRS
 )
 
 ADD_EXECUTABLE(test-i2c ${testingCode_SRCS} )
-TARGET_LINK_LIBRARIES(test m)
+TARGET_LINK_LIBRARIES(test-i2c m)
 
 INCLUDE_DIRECTORIES(/usr/include)
 
