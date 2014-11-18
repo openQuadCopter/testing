@@ -22,8 +22,8 @@ void i2ccom::init()
 	}
 	printf("I2C device well opened\n");
 	
-	// openning i2c bus at address 0x11
-	int addr = 0x11;          // The I2C address of the ADC
+	// openning i2c bus at address 0x04
+	int addr = 0x04;          // The I2C address of the ADC
 	if (ioctl(file, I2C_SLAVE, addr) < 0) {
 		printf("Failed to acquire bus access and/or talk to slave.\n");
 		/* ERROR HANDLING; you can check errno to see what went wrong */

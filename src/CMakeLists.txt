@@ -7,10 +7,10 @@ SET( testingCode_HDRS
 	${testing_SOURCE_DIR}/include/i2cCom.h
 )
 
-ADD_EXECUTABLE(test ${testingCode_SRCS} )
+ADD_EXECUTABLE(test-i2c ${testingCode_SRCS} )
 TARGET_LINK_LIBRARIES(test m)
 
 INCLUDE_DIRECTORIES(/usr/include)
 
-INSTALL( TARGETS test DESTINATION bin)
+INSTALL( TARGETS test-i2c DESTINATION bin)
 INSTALL( FILES ${testingCode_HDRS} DESTINATION include)
