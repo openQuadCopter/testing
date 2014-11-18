@@ -38,7 +38,7 @@ void i2ccom::init()
 	values[2] = 67;
 	values[3] = 67;
 	values[4] = 67;
-	i2c_smbus_write_i2c_block_data(file, addr, 5, values);
+	i2c_smbus_write_i2c_block_data(file, addr, sizeof(unsigned char) * 5, values);
 	close(file);
 }
 
