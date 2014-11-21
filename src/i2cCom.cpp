@@ -32,7 +32,7 @@ void i2ccom::init()
 	printf("I2C bus well opened\n");
 	
 	unsigned char values[5];
-	int reg = 0x10;
+	int reg = 0x00;
 	values[0] = 0x01;
 	values[1] = 0x43;
 	values[2] = 0x43;
