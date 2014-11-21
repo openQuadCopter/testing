@@ -33,12 +33,12 @@ void i2ccom::init()
 	
 	unsigned char values[5];
 	int reg = 0x10;
-	values[0] = 1;
-	values[1] = 67;
-	values[2] = 67;
-	values[3] = 67;
-	values[4] = 67;
-	i2c_smbus_write_i2c_block_data(file, reg, 2, values);
+	values[0] = 0x01;
+	values[1] = 0x43;
+	values[2] = 0x43;
+	values[3] = 0x43;
+	values[4] = 0x43;
+	i2c_smbus_write_i2c_block_data(file, reg, 5, values);
 	close(file);
 }
 
